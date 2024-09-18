@@ -3,29 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
   <link rel="stylesheet" href="style.css">
   <title>Rock Paper Scissors</title>
 </head>
 <body>
   <header>
-    <h1>Rock Paper Scissors</h1>
-    <h2>Creature mode!</h2>
-    <p>Play five rounds against the computer.</p>
+    <h1>Rock Paper Scissors Monster Edition </h1>
+    <p>Win five rounds against the computer.</p>
   </header>
   <main>
     <div class="container">
-      <h3>You: 0</h3>
-      <h3>Computer: 0</h3>
+      <div class="container-score">
+        <h2>You: 0</h2>
+        <h2>Computer: 0</h2>
+        <h2>Draws: 0</h2>
+      </div>
     </div>
     <div class="container-btn">
-      <button>
+      <button class="choice-btn" id="rock">
         <img src="img/rock-creature.png" alt="Rock choice. Rock creature">
       </button>
-      <button>
+      <button class="choice-btn" id="paper">
         <img src="img/paper-creature.png" alt="Paper choice. Paper creature">
       </button>
-      <button>
+      <button class="choice-btn" id="scissors">
         <img src="img/scissors-creature.png" alt="Scissors choice. Scissors creature">
       </button>
     </div>
